@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Counter from './components/Counter'
+import RandomUserApi from './components/RandomUserApi'
+// import './style.css'
 
-function App() {
+const App = () => {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <h1>HELLO</h1>     
+      {/* <Counter initialCount = {1} /> */}
+      <RandomUserApi/>
     </div>
-  );
+  )
 }
 
-export default App;
+export default App
